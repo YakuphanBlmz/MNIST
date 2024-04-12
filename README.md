@@ -1,7 +1,7 @@
 ![image](https://github.com/YakuphanBlmz/MNIST/assets/106194461/125d86b3-f158-4bb8-b158-62f83c3d374b)# MNIST
 Elimizde farklı insanların rakam el yazılarından kesilmiş resimler bulunuyor ve bu resimlerin hangi rakamı temsil ettiğini biliyoruz. Amacımız, bu el yazılarını input olarak alıp karşılık gelen rakamı çıktı olarak belirleyen bir sinir ağı oluşturmak ve eğitmektir.
 
-Bu amaçla, Python'da MNIST (Modified National Institute of Standards) veri kümesi gibi, el yazılarını piksel değerleriyle sayısallaştırılmış şekilde içeren bir veri kümesi bulunmaktadır. Bu veri kümesine erişmek için TensorFlow kütüphanesini kullanabiliriz. TensorFlow'u yüklemek için 'pip install tensorflow' komutunu kullanabilirsiniz.
+Bu amaçla, Python'da MNIST (Modified National Institute of Standards) veri kümesi gibi, el yazılarını piksel değerleriyle sayısallaştırılmış şekilde içeren bir veri kümesi bulunmaktadır. Bu veri kümesine erişmek için TensorFlow kütüphanesini kullanabiliriz. TensorFlow'u yüklemek için ``'pip install tensorflow``` komutunu kullanabilirsiniz.
 
 Bu veri setini kullanarak, sinir ağını eğitebilir ve bir resmin hangi rakamı temsil ettiğini tahmin etmesini sağlayabiliriz.
 
@@ -46,8 +46,55 @@ Epoch 5/5 469/469 [==============================] - 5s 11ms/step - loss: 0.0734
 
 Eğer epochs değerini 10 yaparsak daha çok öğrenme olmuş olacaktır.
 
+**Son Düzeltmeler ile Son Değerler :**
+- Test Accuracy : 98.0 %
+- Test Loss : 8.1 %
+- Test Precision : 98.1 %
+- Test Recall : 97.9 %
+
+**NOT:** Accuracy, recall ve precision değerlerinin yakın çıkması demek, sınıflar arası bir dengesizlik olmadığı anlamına geliyor.
+
+**a. Precision :** Mesela bizim 1 olarak tahmin ettiğimiz sınıfların, ne kadar 1 olduğunu kontrol eder. Tahmin ettiklerimizin başarısıdır. Yani hassaslığa bakar. Precision = Hassas
+**b. Recall :** Önce gerçek değerlere odaklanırız. Sonrasında biz bunların kaç tanesini doğru tahmin ettik diye bakıyoruz.
+
+
 
 ![image](https://github.com/YakuphanBlmz/MNIST/assets/106194461/46d367f0-f458-4138-8696-8f07b15006bc)
+
+
+# Modelin Kayıt Edilmesi ve Tahmin İçin Kullanılması 
+
+```model.save('mnist_model.h5')```                         => h5 dosya formatında kayıt gerçekleşir.
+```random = random.randint(0, x_test.shape[0])```          => Bir adet örnek seçtik.
+```test_image = x_test[random]```                          => Değişkene atadık.
+```y_test[random]```                                       => Şimdi bakalım biz hangi etiketli veriyi almışız. Verinin etiketine bakalım.
+```plt.imshow(test_image.reshape(28,28), cmap="gray")```   => İstersek bir de ekranda görelim.
+
+![image](https://github.com/YakuphanBlmz/MNIST/assets/106194461/fbd1697d-079d-4ace-9ddc-63b8b7584ebc)
+
+
+
+```test_data = x_test[random].reshape(1,28,28,1)```        => Önce reshape yapıyoruz modele sormak için.
+```probability = model.predict(test_data)```               => Şimdi ise modelin tahmin etmesi için gereken kodu yazıyoruz.
+```predict_classes = np.argmax(probability)```             => probability değişkeninde çıkan olasılık sonuçlarımız var. Bu olasılık değerleri arasından en yüksek olan değeri bulmamız gerekecek. Bunun için bu kodu yazabiliriz.
+```print("Random Seçilen Sayı : " , predict_classes)```    => "Random Seçilen Sayı :  9"
+
+**- Daha Ayrıntılı Bilgi İstersek :**
+
+```print(f"Tahmin Edilen Sınıf:  {predict_classes} \n" )```
+```print(f"Tahmin Edilen Sınıfın Olasılık Değeri:  {(np.max(probability, axis=-1))[0]} \n" )```
+```print(f"Diğer Sınıfların Olasılık Değerleri: \n {probability} " )```
+
+"
+Tahmin Edilen Sınıf:  9 
+
+Tahmin Edilen Sınıfın Olasılık Değeri:  0.9999940395355225 
+
+Diğer Sınıfların Olasılık Değerleri: 
+ [[1.5927174e-09 6.4466547e-15 2.9438849e-07 1.0376165e-07 3.1133129e-06
+  1.5393294e-07 3.4492955e-12 2.3353400e-06 3.9469394e-10 9.9999404e-01]]
+  
+"
 
 
 
