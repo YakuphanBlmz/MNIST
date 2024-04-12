@@ -63,7 +63,8 @@ Eğer epochs değerini 10 yaparsak daha çok öğrenme olmuş olacaktır.
 **b. Recall :** Önce gerçek değerlere odaklanırız. Sonrasında biz bunların kaç tanesini doğru tahmin ettik diye bakıyoruz.
 
 <br>
-![image](https://github.com/YakuphanBlmz/MNIST/assets/106194461/46d367f0-f458-4138-8696-8f07b15006bc)
+![image](https://github.com/YakuphanBlmz/MNIST/assets/106194461/72f45c20-c592-4911-97e5-22d9ca92ab24)
+
 <br>
 
 # Modelin Kayıt Edilmesi ve Tahmin İçin Kullanılması 
