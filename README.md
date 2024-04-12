@@ -92,14 +92,17 @@ Eğer epochs değerini 10 yaparsak daha çok öğrenme olmuş olacaktır.
 
 <br>
 "
-Tahmin Edilen Sınıf:  9 
+<br>
 
-Tahmin Edilen Sınıfın Olasılık Değeri:  0.9999940395355225 
+**Tahmin Edilen Sınıf: 9**
 
-Diğer Sınıfların Olasılık Değerleri: 
+**Tahmin Edilen Sınıfın Olasılık Değeri:  0.9999940395355225** 
+
+**Diğer Sınıfların Olasılık Değerleri: 
  [[1.5927174e-09 6.4466547e-15 2.9438849e-07 1.0376165e-07 3.1133129e-06
-  1.5393294e-07 3.4492955e-12 2.3353400e-06 3.9469394e-10 9.9999404e-01]]
+  1.5393294e-07 3.4492955e-12 2.3353400e-06 3.9469394e-10 9.9999404e-01]]**
   
+<br>
 "
 
 
