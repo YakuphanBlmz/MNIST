@@ -9,11 +9,11 @@ Bu veri setini kullanarak, sinir ağını eğitebilir ve bir resmin hangi rakam�
 
 # Yapay Sinir Ağları ile Rakam Tanıma
 Projemizi beş adımda gerçekleştireceğiz. 
-**1)** İş Problemi (Business Problem)
-**2)** Veriyi Anlamak (Data Understanding)
-**3)** Veriyi Hazırlamak (Data Preparation)
-**4)** Modelleme (Modeling)
-**5)** Değerlendirme (Evulation)
+1) İş Problemi (Business Problem)
+2) Veriyi Anlamak (Data Understanding)
+3) Veriyi Hazırlamak (Data Preparation)
+4) Modelleme (Modeling)
+5) Değerlendirme (Evulation)
 
 **NOT :** Kod içerisinde yorum satırlarında yeteri kadar Türkçe dili ile açıklama mevcuttur.
 
