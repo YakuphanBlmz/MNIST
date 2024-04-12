@@ -86,9 +86,9 @@ Eğer epochs değerini 10 yaparsak daha çok öğrenme olmuş olacaktır.
 
 **- Daha Ayrıntılı Bilgi İstersek :**
 
-```print(f"Tahmin Edilen Sınıf:  {predict_classes} \n" )```
-```print(f"Tahmin Edilen Sınıfın Olasılık Değeri:  {(np.max(probability, axis=-1))[0]} \n" )```
-```print(f"Diğer Sınıfların Olasılık Değerleri: \n {probability} " )```
+``` * print(f"Tahmin Edilen Sınıf:  {predict_classes} \n" )```
+``` * print(f"Tahmin Edilen Sınıfın Olasılık Değeri:  {(np.max(probability, axis=-1))[0]} \n" )```
+``` * print(f"Diğer Sınıfların Olasılık Değerleri: \n {probability} " )```
 
 <br>
 "
