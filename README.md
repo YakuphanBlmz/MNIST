@@ -34,11 +34,11 @@ Bağımsız değişkenler, bağımlı değişken üzerinde potansiyel bir etkiye
 <br>
 
 **ÇIKTI**<br><br>
-```Epoch 1/5 469/469 [==============================] - 4s 6ms/step - loss: 0.3578 - precision_1: 0.9477 - recall_1: 0.8497 - accuracy: 0.9000 - val_loss: 0.1983 - val_precision_1: 0.9553 - val_recall_1: 0.9278 - val_accuracy: 0.9418 <br>```
-```Epoch 2/5 469/469 [==============================] - 3s 5ms/step - loss: 0.1642 - precision_1: 0.9637 - recall_1: 0.9428 - accuracy: 0.9526 - val_loss: 0.1385 - val_precision_1: 0.9676 - val_recall_1: 0.9505 - val_accuracy: 0.9592 <br>```
-```Epoch 3/5 469/469 [==============================] - 5s 11ms/step - loss: 0.1175 - precision_1: 0.9738 - recall_1: 0.9599 - accuracy: 0.9666 - val_loss: 0.1144 - val_precision_1: 0.9719 - val_recall_1: 0.9601 - val_accuracy: 0.9652 <br>```
-```Epoch 4/5 469/469 [==============================] - 6s 12ms/step - loss: 0.0913 - precision_1: 0.9785 - recall_1: 0.9690 - accuracy: 0.9735 - val_loss: 0.0920 - val_precision_1: 0.9768 - val_recall_1: 0.9671 - val_accuracy: 0.9714 <br>```
-```Epoch 5/5 469/469 [==============================] - 5s 11ms/step - loss: 0.0734 - precision_1: 0.9818 - recall_1: 0.9744 - accuracy: 0.9782 - val_loss: 0.0894 - val_precision_1: 0.9767 - val_recall_1: 0.9680 - val_accuracy: 0.9721 <br>```
+```Epoch 1/5 469/469 [==============================] - 4s 6ms/step - loss: 0.3578 - precision_1: 0.9477 - recall_1: 0.8497 - accuracy: 0.9000 - val_loss: 0.1983 - val_precision_1: 0.9553 - val_recall_1: 0.9278 - val_accuracy: 0.9418 <br>```<br>
+```Epoch 2/5 469/469 [==============================] - 3s 5ms/step - loss: 0.1642 - precision_1: 0.9637 - recall_1: 0.9428 - accuracy: 0.9526 - val_loss: 0.1385 - val_precision_1: 0.9676 - val_recall_1: 0.9505 - val_accuracy: 0.9592 <br>```<br>
+```Epoch 3/5 469/469 [==============================] - 5s 11ms/step - loss: 0.1175 - precision_1: 0.9738 - recall_1: 0.9599 - accuracy: 0.9666 - val_loss: 0.1144 - val_precision_1: 0.9719 - val_recall_1: 0.9601 - val_accuracy: 0.9652 <br>```<br>
+```Epoch 4/5 469/469 [==============================] - 6s 12ms/step - loss: 0.0913 - precision_1: 0.9785 - recall_1: 0.9690 - accuracy: 0.9735 - val_loss: 0.0920 - val_precision_1: 0.9768 - val_recall_1: 0.9671 - val_accuracy: 0.9714 <br>```<br>
+```Epoch 5/5 469/469 [==============================] - 5s 11ms/step - loss: 0.0734 - precision_1: 0.9818 - recall_1: 0.9744 - accuracy: 0.9782 - val_loss: 0.0894 - val_precision_1: 0.9767 - val_recall_1: 0.9680 - val_accuracy: 0.9721 <br>```<br>
 ```<keras.src.callbacks.History at 0x7ec6cebb4520>```
 
 **Bu değerleri inceleyecek olursak :**
