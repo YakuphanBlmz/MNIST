@@ -43,9 +43,9 @@ Bağımsız değişkenler, bağımlı değişken üzerinde potansiyel bir etkiye
 
 **Bu değerleri inceleyecek olursak :**
 
-**1.** accuracy yani doğruluk değeri , val_accrucay değeri ile benzer.
-**2.** Loss değeri gitgide düşmüş. Ne kadar düşükse o kadar iyi.
-**3.** accuracy: 0.9782 ise %97'lik bir başarı oranımız var demektir.
+**1.** accuracy yani doğruluk değeri , val_accrucay değeri ile benzer. <br>
+**2.** Loss değeri gitgide düşmüş. Ne kadar düşükse o kadar iyi. <br>
+**3.** accuracy: 0.9782 ise %97'lik bir başarı oranımız var demektir. <br>
 
 Eğer epochs değerini 10 yaparsak daha çok öğrenme olmuş olacaktır.
 
