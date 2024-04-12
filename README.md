@@ -1,4 +1,4 @@
-![image](https://github.com/YakuphanBlmz/MNIST/assets/106194461/125d86b3-f158-4bb8-b158-62f83c3d374b)# MNIST
+# MNIST
 Elimizde farklı insanların rakam el yazılarından kesilmiş resimler bulunuyor ve bu resimlerin hangi rakamı temsil ettiğini biliyoruz. Amacımız, bu el yazılarını input olarak alıp karşılık gelen rakamı çıktı olarak belirleyen bir sinir ağı oluşturmak ve eğitmektir.
 
 Bu amaçla, Python'da MNIST (Modified National Institute of Standards) veri kümesi gibi, el yazılarını piksel değerleriyle sayısallaştırılmış şekilde içeren bir veri kümesi bulunmaktadır. Bu veri kümesine erişmek için TensorFlow kütüphanesini kullanabiliriz. TensorFlow'u yüklemek için ``'pip install tensorflow``` komutunu kullanabilirsiniz.
