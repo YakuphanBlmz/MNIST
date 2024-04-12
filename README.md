@@ -74,7 +74,7 @@ Eğer epochs değerini 10 yaparsak daha çok öğrenme olmuş olacaktır.
 ```y_test[random]```                                       => Şimdi bakalım biz hangi etiketli veriyi almışız. Verinin etiketine bakalım.
 ```plt.imshow(test_image.reshape(28,28), cmap="gray")```   => İstersek bir de ekranda görelim.
 
-![image](https://github.com/YakuphanBlmz/MNIST/assets/106194461/fbd1697d-079d-4ace-9ddc-63b8b7584ebc)
+
 
 
 
