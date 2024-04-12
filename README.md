@@ -5,13 +5,15 @@ Bu amaçla, Python'da MNIST (Modified National Institute of Standards) veri küm
 
 Bu veri setini kullanarak, sinir ağını eğitebilir ve bir resmin hangi rakamı temsil ettiğini tahmin etmesini sağlayabiliriz.
 
+<br>
+
 # Yapay Sinir Ağları ile Rakam Tanıma
 Projemizi beş adımda gerçekleştireceğiz. 
-1. İş Problemi (Business Problem)
-2. Veriyi Anlamak (Data Understanding)
-3. Veriyi Hazırlamak (Data Preparation)
-4. Modelleme (Modeling)
-5. Değerlendirme (Evulation)
+**1.** İş Problemi (Business Problem)
+**2.** Veriyi Anlamak (Data Understanding)
+**3.** Veriyi Hazırlamak (Data Preparation)
+**4.** Modelleme (Modeling)
+**5.** Değerlendirme (Evulation)
 
 **NOT :** Kod içerisinde yorum satırlarında yeteri kadar Türkçe dili ile açıklama mevcuttur.
 
@@ -29,22 +31,25 @@ Bağımsız değişkenler, bağımlı değişken üzerinde potansiyel bir etkiye
 - Bağımlı Değişken: Ev fiyatı
 - Bağımsız Değişkenler: Yatak odası sayısı, banyo sayısı, evin konumu, evin büyüklüğü gibi faktörler
 
+<br>
 
 **ÇIKTI**
-Epoch 1/5 469/469 [==============================] - 4s 6ms/step - loss: 0.3578 - precision_1: 0.9477 - recall_1: 0.8497 - accuracy: 0.9000 - val_loss: 0.1983 - val_precision_1: 0.9553 - val_recall_1: 0.9278 - val_accuracy: 0.9418 
-Epoch 2/5 469/469 [==============================] - 3s 5ms/step - loss: 0.1642 - precision_1: 0.9637 - recall_1: 0.9428 - accuracy: 0.9526 - val_loss: 0.1385 - val_precision_1: 0.9676 - val_recall_1: 0.9505 - val_accuracy: 0.9592 
-Epoch 3/5 469/469 [==============================] - 5s 11ms/step - loss: 0.1175 - precision_1: 0.9738 - recall_1: 0.9599 - accuracy: 0.9666 - val_loss: 0.1144 - val_precision_1: 0.9719 - val_recall_1: 0.9601 - val_accuracy: 0.9652 
-Epoch 4/5 469/469 [==============================] - 6s 12ms/step - loss: 0.0913 - precision_1: 0.9785 - recall_1: 0.9690 - accuracy: 0.9735 - val_loss: 0.0920 - val_precision_1: 0.9768 - val_recall_1: 0.9671 - val_accuracy: 0.9714 
-Epoch 5/5 469/469 [==============================] - 5s 11ms/step - loss: 0.0734 - precision_1: 0.9818 - recall_1: 0.9744 - accuracy: 0.9782 - val_loss: 0.0894 - val_precision_1: 0.9767 - val_recall_1: 0.9680 - val_accuracy: 0.9721 
+Epoch 1/5 469/469 [==============================] - 4s 6ms/step - loss: 0.3578 - precision_1: 0.9477 - recall_1: 0.8497 - accuracy: 0.9000 - val_loss: 0.1983 - val_precision_1: 0.9553 - val_recall_1: 0.9278 - val_accuracy: 0.9418 <br>
+Epoch 2/5 469/469 [==============================] - 3s 5ms/step - loss: 0.1642 - precision_1: 0.9637 - recall_1: 0.9428 - accuracy: 0.9526 - val_loss: 0.1385 - val_precision_1: 0.9676 - val_recall_1: 0.9505 - val_accuracy: 0.9592 <br>
+Epoch 3/5 469/469 [==============================] - 5s 11ms/step - loss: 0.1175 - precision_1: 0.9738 - recall_1: 0.9599 - accuracy: 0.9666 - val_loss: 0.1144 - val_precision_1: 0.9719 - val_recall_1: 0.9601 - val_accuracy: 0.9652 <br>
+Epoch 4/5 469/469 [==============================] - 6s 12ms/step - loss: 0.0913 - precision_1: 0.9785 - recall_1: 0.9690 - accuracy: 0.9735 - val_loss: 0.0920 - val_precision_1: 0.9768 - val_recall_1: 0.9671 - val_accuracy: 0.9714 <br>
+Epoch 5/5 469/469 [==============================] - 5s 11ms/step - loss: 0.0734 - precision_1: 0.9818 - recall_1: 0.9744 - accuracy: 0.9782 - val_loss: 0.0894 - val_precision_1: 0.9767 - val_recall_1: 0.9680 - val_accuracy: 0.9721 <br>
 <keras.src.callbacks.History at 0x7ec6cebb4520>
 
 **Bu değerleri inceleyecek olursak :**
 
-1. accuracy yani doğruluk değeri , val_accrucay değeri ile benzer.
-2. Loss değeri gitgide düşmüş. Ne kadar düşükse o kadar iyi.
-3. accuracy: 0.9782 ise %97'lik bir başarı oranımız var demektir.
+**1.** accuracy yani doğruluk değeri , val_accrucay değeri ile benzer.
+**2.** Loss değeri gitgide düşmüş. Ne kadar düşükse o kadar iyi.
+**3.** accuracy: 0.9782 ise %97'lik bir başarı oranımız var demektir.
 
 Eğer epochs değerini 10 yaparsak daha çok öğrenme olmuş olacaktır.
+
+<br>
 
 **Son Düzeltmeler ile Son Değerler :**
 - Test Accuracy : 98.0 %
@@ -54,13 +59,12 @@ Eğer epochs değerini 10 yaparsak daha çok öğrenme olmuş olacaktır.
 
 **NOT:** Accuracy, recall ve precision değerlerinin yakın çıkması demek, sınıflar arası bir dengesizlik olmadığı anlamına geliyor.
 
-**a. Precision :** Mesela bizim 1 olarak tahmin ettiğimiz sınıfların, ne kadar 1 olduğunu kontrol eder. Tahmin ettiklerimizin başarısıdır. Yani hassaslığa bakar. Precision = Hassas
+**a. Precision :** Mesela bizim 1 olarak tahmin ettiğimiz sınıfların, ne kadar 1 olduğunu kontrol eder. Tahmin ettiklerimizin başarısıdır. Yani hassaslığa bakar. Precision = Hassas<br>
 **b. Recall :** Önce gerçek değerlere odaklanırız. Sonrasında biz bunların kaç tanesini doğru tahmin ettik diye bakıyoruz.
 
-
-
+<br>
 ![image](https://github.com/YakuphanBlmz/MNIST/assets/106194461/46d367f0-f458-4138-8696-8f07b15006bc)
-
+<br>
 
 # Modelin Kayıt Edilmesi ve Tahmin İçin Kullanılması 
 
@@ -85,6 +89,7 @@ Eğer epochs değerini 10 yaparsak daha çok öğrenme olmuş olacaktır.
 ```print(f"Tahmin Edilen Sınıfın Olasılık Değeri:  {(np.max(probability, axis=-1))[0]} \n" )```
 ```print(f"Diğer Sınıfların Olasılık Değerleri: \n {probability} " )```
 
+<br>
 "
 Tahmin Edilen Sınıf:  9 
 
